@@ -40,7 +40,7 @@
 	NSMutableArray *subCommands;
 }
 
-@property(nonatomic, retain) NSMutableArray *subCommands;
+@property(nonatomic, strong) NSMutableArray *subCommands;
 
 -(id)init;
 -(void)initializeMacroCommand;

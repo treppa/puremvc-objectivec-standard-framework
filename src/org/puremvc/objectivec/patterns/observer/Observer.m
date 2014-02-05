@@ -17,7 +17,7 @@
  * Static Convienence Constructor.
  */
 +(id)withNotifyMethod:(SEL)notifyMethod notifyContext:(id)notifyContext {
-	return [[[self alloc] initWithNotifyMethod:notifyMethod notifyContext:notifyContext] autorelease];
+	return [[self alloc] initWithNotifyMethod:notifyMethod notifyContext:notifyContext];
 }
 
 /**
@@ -54,13 +54,11 @@
  * @param notification the <code>INotification</code> to pass to the interested object's notification method.
  */
 -(void)notifyObserver:(id<INotification>)notification {
+    // ignores the leak warning from xcode
+    #pragma clang diagnostic push
+    #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
 	[notifyContext performSelector:notifyMethod withObject:notification];
-}
-
--(void)dealloc {
-	self.notifyMethod = nil;
-	self.notifyContext = nil;
-	[super dealloc];
+    #pragma clang diagnostic pop
 }
 
 

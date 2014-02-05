@@ -17,7 +17,7 @@
  * Static Convenience Constructor. 
  */
 +(id)command {
-	return [[[self alloc] init] autorelease];
+	return [[self alloc] init];
 }
 
 /**
@@ -89,13 +89,9 @@
  */
 -(void)execute:(id<INotification>)notification {
 	for (Class commandClassRef in subCommands) {
-		[[[[commandClassRef alloc] init] autorelease] execute:notification];
+		[[[commandClassRef alloc] init] execute:notification];
 	}
 }
 
--(void)dealloc {
-	self.subCommands = nil;
-	[super dealloc];
-}
 
 @end

@@ -24,13 +24,13 @@
  * <LI>Notifying the <code>IObservers</code> of a given <code>INotification</code> when it broadcast.</LI>
  * </UL>
  * 
- * @see Mediator, Observer, Notification
+ * @see NSObject+Mediator, Observer, Notification
  */
 @interface View : NSObject <IView> {
 	NSMutableDictionary *mediatorMap, *observerMap;
 }
 
-@property(nonatomic, retain) NSMutableDictionary *mediatorMap, *observerMap;
+@property(nonatomic, strong) NSMutableDictionary *mediatorMap, *observerMap;
 
 -(id)init;
 -(void)initializeView;

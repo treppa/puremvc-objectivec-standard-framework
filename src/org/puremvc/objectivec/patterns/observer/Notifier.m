@@ -46,9 +46,5 @@
 	[self sendNotification:notificationName body:nil type:type];
 }
 
--(void)dealloc {
-	self.facade = nil;
-	[super dealloc];
-}
 
 @end

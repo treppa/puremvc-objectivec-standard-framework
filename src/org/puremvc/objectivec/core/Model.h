@@ -38,7 +38,7 @@
 	NSMutableDictionary *proxyMap;
 }
 
-@property(nonatomic, retain) NSMutableDictionary *proxyMap;
+@property(nonatomic, strong) NSMutableDictionary *proxyMap;
 
 -(id)init;
 -(void)initializeModel;

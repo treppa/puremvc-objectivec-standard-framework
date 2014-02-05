@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		313EA2B218A24B0D00E65B7E /* NSObject+Mediator.h in Headers */ = {isa = PBXBuildFile; fileRef = 313EA2B018A24B0D00E65B7E /* NSObject+Mediator.h */; };
+		313EA2B318A24B0D00E65B7E /* NSObject+Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 313EA2B118A24B0D00E65B7E /* NSObject+Mediator.m */; };
 		40C7CDFB12EA113E003FF22C /* Controller.h in Headers */ = {isa = PBXBuildFile; fileRef = 40C7CDD412EA113E003FF22C /* Controller.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		40C7CDFC12EA113E003FF22C /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C7CDD512EA113E003FF22C /* Controller.m */; };
 		40C7CDFD12EA113E003FF22C /* Model.h in Headers */ = {isa = PBXBuildFile; fileRef = 40C7CDD612EA113E003FF22C /* Model.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -29,8 +31,6 @@
 		40C7CE0E12EA113E003FF22C /* SimpleCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C7CDEA12EA113E003FF22C /* SimpleCommand.m */; };
 		40C7CE0F12EA113E003FF22C /* Facade.h in Headers */ = {isa = PBXBuildFile; fileRef = 40C7CDEC12EA113E003FF22C /* Facade.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		40C7CE1012EA113E003FF22C /* Facade.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C7CDED12EA113E003FF22C /* Facade.m */; };
-		40C7CE1112EA113E003FF22C /* Mediator.h in Headers */ = {isa = PBXBuildFile; fileRef = 40C7CDEF12EA113E003FF22C /* Mediator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		40C7CE1212EA113E003FF22C /* Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C7CDF012EA113E003FF22C /* Mediator.m */; };
 		40C7CE1312EA113E003FF22C /* Notification.h in Headers */ = {isa = PBXBuildFile; fileRef = 40C7CDF212EA113E003FF22C /* Notification.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		40C7CE1412EA113E003FF22C /* Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C7CDF312EA113E003FF22C /* Notification.m */; };
 		40C7CE1512EA113E003FF22C /* Notifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 40C7CDF412EA113E003FF22C /* Notifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -44,6 +44,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		313EA2B018A24B0D00E65B7E /* NSObject+Mediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Mediator.h"; sourceTree = "<group>"; };
+		313EA2B118A24B0D00E65B7E /* NSObject+Mediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Mediator.m"; sourceTree = "<group>"; };
 		40C7CDD412EA113E003FF22C /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Controller.h; path = src/org/puremvc/objectivec/core/Controller.h; sourceTree = SOURCE_ROOT; };
 		40C7CDD512EA113E003FF22C /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Controller.m; path = src/org/puremvc/objectivec/core/Controller.m; sourceTree = SOURCE_ROOT; };
 		40C7CDD612EA113E003FF22C /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Model.h; path = src/org/puremvc/objectivec/core/Model.h; sourceTree = SOURCE_ROOT; };
@@ -66,8 +68,6 @@
 		40C7CDEA12EA113E003FF22C /* SimpleCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleCommand.m; path = src/org/puremvc/objectivec/patterns/command/SimpleCommand.m; sourceTree = SOURCE_ROOT; };
 		40C7CDEC12EA113E003FF22C /* Facade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Facade.h; path = src/org/puremvc/objectivec/patterns/facade/Facade.h; sourceTree = SOURCE_ROOT; };
 		40C7CDED12EA113E003FF22C /* Facade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Facade.m; path = src/org/puremvc/objectivec/patterns/facade/Facade.m; sourceTree = SOURCE_ROOT; };
-		40C7CDEF12EA113E003FF22C /* Mediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mediator.h; path = src/org/puremvc/objectivec/patterns/mediator/Mediator.h; sourceTree = SOURCE_ROOT; };
-		40C7CDF012EA113E003FF22C /* Mediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mediator.m; path = src/org/puremvc/objectivec/patterns/mediator/Mediator.m; sourceTree = SOURCE_ROOT; };
 		40C7CDF212EA113E003FF22C /* Notification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Notification.h; path = src/org/puremvc/objectivec/patterns/observer/Notification.h; sourceTree = SOURCE_ROOT; };
 		40C7CDF312EA113E003FF22C /* Notification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Notification.m; path = src/org/puremvc/objectivec/patterns/observer/Notification.m; sourceTree = SOURCE_ROOT; };
 		40C7CDF412EA113E003FF22C /* Notifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Notifier.h; path = src/org/puremvc/objectivec/patterns/observer/Notifier.h; sourceTree = SOURCE_ROOT; };
@@ -235,8 +235,8 @@
 		40C7CDEE12EA113E003FF22C /* mediator */ = {
 			isa = PBXGroup;
 			children = (
-				40C7CDEF12EA113E003FF22C /* Mediator.h */,
-				40C7CDF012EA113E003FF22C /* Mediator.m */,
+				313EA2B018A24B0D00E65B7E /* NSObject+Mediator.h */,
+				313EA2B118A24B0D00E65B7E /* NSObject+Mediator.m */,
 			);
 			name = mediator;
 			path = src/org/puremvc/objectivec/patterns/mediator;
@@ -286,11 +286,11 @@
 				40C7CE0712EA113E003FF22C /* INotifier.h in Headers */,
 				40C7CE0812EA113E003FF22C /* IObserver.h in Headers */,
 				40C7CE0912EA113E003FF22C /* IProxy.h in Headers */,
+				313EA2B218A24B0D00E65B7E /* NSObject+Mediator.h in Headers */,
 				40C7CE0A12EA113E003FF22C /* IView.h in Headers */,
 				40C7CE0B12EA113E003FF22C /* MacroCommand.h in Headers */,
 				40C7CE0D12EA113E003FF22C /* SimpleCommand.h in Headers */,
 				40C7CE0F12EA113E003FF22C /* Facade.h in Headers */,
-				40C7CE1112EA113E003FF22C /* Mediator.h in Headers */,
 				40C7CE1312EA113E003FF22C /* Notification.h in Headers */,
 				40C7CE1512EA113E003FF22C /* Notifier.h in Headers */,
 				40C7CE1712EA113E003FF22C /* Observer.h in Headers */,
@@ -323,6 +323,8 @@
 /* Begin PBXProject section */
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "PureMVC_ObjectiveC" */;
 			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;
@@ -354,7 +356,7 @@
 				40C7CE0C12EA113E003FF22C /* MacroCommand.m in Sources */,
 				40C7CE0E12EA113E003FF22C /* SimpleCommand.m in Sources */,
 				40C7CE1012EA113E003FF22C /* Facade.m in Sources */,
-				40C7CE1212EA113E003FF22C /* Mediator.m in Sources */,
+				313EA2B318A24B0D00E65B7E /* NSObject+Mediator.m in Sources */,
 				40C7CE1412EA113E003FF22C /* Notification.m in Sources */,
 				40C7CE1612EA113E003FF22C /* Notifier.m in Sources */,
 				40C7CE1812EA113E003FF22C /* Observer.m in Sources */,
@@ -370,6 +372,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/PureMVC_ObjectiveC.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -390,6 +393,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				DSTROOT = /tmp/PureMVC_ObjectiveC.dst;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

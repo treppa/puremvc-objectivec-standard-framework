@@ -30,7 +30,7 @@
  * </UL>
  * <P>
  * 
- * @see Model, View, Controller, Notification, Mediator, Proxy, SimpleCommand, MacroCommand
+ * @see Model, View, Controller, Notification, NSObject+Mediator, Proxy, SimpleCommand, MacroCommand
  */
 @interface Facade : NSObject <IFacade> {
 	id<IController> controller;
@@ -38,9 +38,9 @@
 	id<IView> view;
 }
 
-@property(nonatomic, retain) id<IController> controller;
-@property(nonatomic, retain) id<IModel> model;
-@property(nonatomic, retain) id<IView> view;
+@property(nonatomic, strong) id<IController> controller;
+@property(nonatomic, strong) id<IModel> model;
+@property(nonatomic, strong) id<IView> view;
 
 -(id)init;
 -(void)initializeFacade;

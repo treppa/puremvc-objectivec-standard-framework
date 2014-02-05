@@ -29,12 +29,12 @@
  * classes have frequent <code>Facade</code> interactions and usually require
  * access to the facade anyway.</P>
  * 
- * @see Facade, Mediator, Proxy, SimpleCommand, MacroCommand
+ * @see Facade, NSObject+Mediator, Proxy, SimpleCommand, MacroCommand
  */
 @interface Notifier : NSObject <INotifier> {
 	id<IFacade> facade;
 }
 
-@property(nonatomic, retain) id<IFacade> facade;
+@property(nonatomic, strong) id<IFacade> facade;
 
 @end

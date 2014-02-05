@@ -293,12 +293,7 @@ static id<IFacade> instance;
 }
 
 -(void)dealloc {
-	self.model = nil;
-	self.controller = nil;
-	self.view = nil;
-	[(id)instance release];
 	instance = nil;
-	[super dealloc];
 }
 
 @end

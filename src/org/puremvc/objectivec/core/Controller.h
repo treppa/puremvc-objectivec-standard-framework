@@ -44,8 +44,8 @@
 	id<IView> view;
 }
 
-@property(nonatomic, retain) NSMutableDictionary *commandMap;
-@property(nonatomic, retain) id<IView> view;
+@property(nonatomic, strong) NSMutableDictionary *commandMap;
+@property(nonatomic, strong) id<IView> view;
 
 -(id)init;
 -(void)initializeController;

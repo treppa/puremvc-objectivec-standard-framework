@@ -43,13 +43,6 @@
 -(NSString *)mediatorName;
 
 /**
- * Get the <code>IMediator</code>'s view component.
- * 
- * @return id the view component
- */
--(id)viewComponent;
-
-/**
  * Handle an <code>INotification</code>.
  * 
  * @param notification the <code>INotification</code> to be handled
@@ -73,12 +66,6 @@
  */ 
 -(void)onRemove;
 
-/**
- * Set the <code>IMediator</code>'s view component.
- * 
- * @param viewComponent the view component
- */
--(void)setViewComponent:(id)viewComponent;
 
 @end
 

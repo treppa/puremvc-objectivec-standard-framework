@@ -159,7 +159,6 @@ static id<IView> instance;
 			[self removeObserver:notificationName notifyContext:mediator];
 		}
 		[mediator onRemove];
-		[mediator setViewComponent:nil];
 		[mediatorMap removeObjectForKey:mediatorName];
 	}
 	return mediator;
@@ -196,12 +195,5 @@ static id<IView> instance;
 	return [mediatorMap objectForKey:mediatorName];
 }
 
--(void)dealloc {
-	self.mediatorMap = nil;
-	self.observerMap = nil;
-	[(id)instance release];
-	instance = nil;
-	[super dealloc];
-}
 
 @end
